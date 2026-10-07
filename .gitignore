@@ -1,0 +1,29 @@
+# Virtual environment
+venv/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Pytest
+.pytest_cache/
+
+# Environment variables
+.env
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Generated certificates
+generated_certificates/
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/

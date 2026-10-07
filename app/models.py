@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, UTC
 
 from sqlalchemy import Column, DateTime, ForeignKey, Integer, String
 from sqlalchemy.orm import relationship
@@ -17,7 +17,7 @@ class GenerationJob(Base):
     success_count = Column(Integer, default=0)
     failure_count = Column(Integer, default=0)
 
-    created_at = Column(DateTime, default=datetime.utcnow)
+    created_at = Column(DateTime, default=lambda: datetime.now(UTC))
     completed_at = Column(DateTime, nullable=True)
 
     certificates = relationship(
@@ -47,7 +47,7 @@ class Certificate(Base):
     file_path = Column(String, nullable=True)
     error_message = Column(String, nullable=True)
 
-    created_at = Column(DateTime, default=datetime.utcnow)
+    created_at = Column(DateTime, default=lambda: datetime.now(UTC))
 
     job = relationship(
         "GenerationJob",
