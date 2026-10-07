@@ -46,7 +46,7 @@ bulk-certificate-generator/
 ├── requirements.txt
 ├── README.md
 └── .gitignore
-**
+```
 Setup
 Create and activate a virtual environment:
 python3 -m venv venv
