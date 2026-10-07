@@ -46,7 +46,7 @@ bulk-certificate-generator/
 ├── requirements.txt
 ├── README.md
 └── .gitignore
-
+**
 Setup
 Create and activate a virtual environment:
 python3 -m venv venv
@@ -143,4 +143,4 @@ Current test result:
 
 EOF
 
-This version is much better for the assignment: **short, factual, and focused only on what you actually implemented.**
+This version is much better for the assignment: **short, factual, and focused only on what you actually implemented.
